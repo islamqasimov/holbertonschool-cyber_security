@@ -1,2 +1,2 @@
 #!/bin/bash
-subfinder -silent -ip -active -d "$1" | awk -F ',' '{print $1 "," $2}' | tee "$1.txt" | awk -F',' '{print $1}'
+subfinder -silent -d "$1" -o "$1.txt" -nW -oI | cut -d',' -f1; sed -i 's/,[^,]*$//' "$1.txt"
