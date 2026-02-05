@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod 0=r "$1"/*
+find "$1" -type f -exec chmod o=r {} +
