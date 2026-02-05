@@ -1,2 +1,3 @@
 #!/bin/bash
-sudo useradd -m -p $(openssl passwd -1 "$2") "$1"
+useradd -m "$1"
+echo "$1:$2" | chpasswd
