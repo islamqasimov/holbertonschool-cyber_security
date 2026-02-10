@@ -1,2 +1,2 @@
 #!/bin/bash
-sestatus | head -n -1
+sestatus | head -n -2
