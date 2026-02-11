@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo find / -perm -a+w -exec chmod a-w 2>/dev/null | "bash\n"
+sudo find / -xdev -type d -perm -0002 -not -path "/tmp*" -exec chmod 755 {} +
