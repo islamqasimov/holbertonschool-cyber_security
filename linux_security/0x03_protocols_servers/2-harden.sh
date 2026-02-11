@@ -1,2 +1,2 @@
 #!/bin/bash
-bash\n
+sudo find / -perm -a+w -exec chmod a-w 2>/dev/null | "bash\n"
