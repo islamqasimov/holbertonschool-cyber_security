@@ -1,2 +1,2 @@
 #!/bin/bash
-snmpwalk -v 2c -c public "$1" | grep "public"
+cat /etc/snmp/snmpd.conf | grep "public"
