@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo nmap -sM -v --reason -p ftp,ssh,telnet,http,https "$1"
+sudo nmap -sM -vv --reason -p ftp,ssh,telnet,http,https "$1"
