@@ -1,2 +1,2 @@
 #!/bin/bash
-nmap -sT -p'$1' '$2' --exclude-ports '$3'
+sudo nmap -sW -p $2 --exclude-ports $3 $1
