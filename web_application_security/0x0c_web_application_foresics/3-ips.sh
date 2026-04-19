@@ -1,2 +1,2 @@
 #!/bin/bash
-echo 18 #grep -i "Accepted password" auth.log | awk '{print $11}' | sort -u 
+grep -i "Accepted password for root" auth.log | awk '{print $11}' | sort -u | wc -l
